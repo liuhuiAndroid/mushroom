@@ -1,7 +1,7 @@
 <template>
   <c-layout>
     <c-header fixed style="background: pink">header</c-header>
-    <c-main style="background: green;">
+    <c-main style="background: green;" circle>
       <div style="height: 1000px">
         <div>main</div>
         <div>main</div>
