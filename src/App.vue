@@ -1,7 +1,16 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <div class="title">CSS架构</div>
-  <a href="https://www.baidu.com/">百度一下</a>
+  <c-layout>
+    <c-header fixed style="background: pink">header</c-header>
+    <c-main style="background: green;">
+      <div style="height: 1000px">
+        <div>main</div>
+        <div>main</div>
+        <div>main</div>
+        <div>main</div>
+      </div>
+    </c-main>
+    <c-footer style="background: yellow">footer</c-footer>
+  </c-layout>
 </template>
 
 <script lang="ts">
