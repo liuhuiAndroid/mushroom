@@ -1,23 +1,24 @@
 <template>
-  <c-layout>
-    <c-header fixed style="background: pink">header</c-header>
-    <c-main style="background: green;" circle>
-      <div style="height: 1000px">
-        <div>main</div>
-        <div>main</div>
-        <div>main</div>
-        <div>main</div>
-      </div>
-    </c-main>
-    <c-footer style="background: yellow">footer</c-footer>
-  </c-layout>
+  <div>
+    <div class="box">main</div>
+    <div class="text">main</div>
+    <div class="text2">main</div>
+  </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, onMounted } from 'vue'
 
 export default defineComponent({
-  name: 'App'
+  name: 'App',
+  setup() {
+    onMounted(() =>{
+      window.document.documentElement.setAttribute(
+        "data-theme",
+        "default"
+      );
+    })
+  }
 })
 </script>
 
