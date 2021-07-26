@@ -1,6 +1,7 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
   <div class="title">CSS架构</div>
+  <a href="https://www.baidu.com/">百度一下</a>
 </template>
 
 <script lang="ts">
@@ -15,7 +16,7 @@ export default defineComponent({
 .title {
   width: 200px;
   height: 200px;
-  color: #FFFFFF;
+  color: $color-text-quaternary;
   background: rgba($color: #000000, $alpha: .4);
   @include box-center;
 }

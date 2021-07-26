@@ -10,6 +10,7 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         additionalData: `
+          @import "./src/style/setting/var.scss";
           @import "./src/style/tools/_sassMagic.scss";
         `
       }
