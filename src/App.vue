@@ -1,27 +1,22 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <div class="title">CSS架构</div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import HelloWorld from './components/HelloWorld.vue'
 
 export default defineComponent({
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+  name: 'App'
 })
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="scss" scoped>
+.title {
+  width: 200px;
+  height: 200px;
+  color: #FFFFFF;
+  background: rgba($color: #000000, $alpha: .4);
+  @include box-center;
 }
 </style>
