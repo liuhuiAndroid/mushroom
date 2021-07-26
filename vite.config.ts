@@ -13,7 +13,16 @@ export default defineConfig({
           @import "./src/style/setting/var.scss";
           @import "./src/style/tools/_sassMagic.scss";
         `
-      }
+      },
+      postcss: {
+				plugins: [
+					require('postcss-plugin-px2rem')({
+						rootValue: 37.5,
+						exclude: /(node_module)/,
+						minPixelValue: 3
+					})
+				]
+			},
     }
   }
 })

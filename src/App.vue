@@ -1,8 +1,6 @@
 <template>
   <div>
-    <div class="box">main</div>
-    <div class="text">main</div>
-    <div class="text2">main</div>
+    <div class="box" circle></div>
   </div>
 </template>
 
@@ -23,11 +21,9 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-.title {
-  width: 200px;
-  height: 200px;
-  color: $color-text-quaternary;
-  background: rgba($color: #000000, $alpha: .4);
-  @include box-center;
+.box {
+  width: 50px;
+  height: 50px;
+  background: pink;
 }
 </style>
