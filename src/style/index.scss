@@ -1,8 +1,13 @@
-@import "./base/page.scss";
-@import "./base/link.scss";
-@import "./base/paragraph.scss";
-@import "./base/images.scss";
-@import "./base/form.scss";
+// @import "./base/page.scss";
+// @import "./base/link.scss";
+// @import "./base/paragraph.scss";
+// @import "./base/images.scss";
+// @import "./base/form.scss";
+
+@import "./elements/page.scss";
+@import "./elements/article.scss";
+@import "./elements/images.scss";
+@import "./elements/link.scss";
 
 @import "./acss/border.scss";
 @import "./acss/color.scss";

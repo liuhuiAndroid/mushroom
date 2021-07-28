@@ -1,6 +1,5 @@
 <template>
   <div>
-    <div class="box" circle></div>
   </div>
 </template>
 
